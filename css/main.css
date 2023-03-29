@@ -1,0 +1,399 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: 'Nunito', sans-serif;
+	color: #6e6e6e;
+	text-decoration: none;
+	margin: 0;
+}
+
+/* * Start Intro */
+#intro {
+	background: url(../images/intro-bg.jpg) no-repeat center bottom;
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#intro div.intro-overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background: black;
+	opacity: .7;
+}
+
+#intro div.intro-content {
+	display: flex;
+	margin: auto;
+	z-index: 1;
+	flex-direction: column;
+	align-items: center;
+}
+
+#intro div.intro-content h5 {
+	color: #cc005f;
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+#intro div.intro-content h1 {
+	color: #fff;
+	font-size: 5rem;
+	margin: 0;
+	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#intro div.intro-content p.intro-position {
+	font-size: 1rem;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	margin: 0;
+	color: #ffffffcc;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+#intro div.intro-content a.btn-about {
+	transition: all .5s;
+	font-weight: 700;
+	color: #fff;
+	margin-top: 50px;
+	border: 3px solid #616161;
+	border-radius: 3px;
+	padding: 20px 30px;
+	font-size: .7rem;
+	text-transform: uppercase;
+	letter-spacing: .25rem;
+	text-decoration: none;
+}
+
+#intro div.intro-content a.btn-about:hover {
+	border-color: #cc005f;
+}
+
+#intro div.intro-content .intro-position span {
+	color: #ffffffcc;
+}
+
+#intro div.intro-content .intro-position span::after {
+	content: "|";
+	padding-left: 8px;
+}
+
+#intro div.intro-content .intro-position span:first-child::before {
+	content: "|";
+	padding-right: 8px;
+}
+
+/* * End Intro  */
+
+
+
+/* * Start About */
+#about {
+	margin: auto;
+	width: 800px;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 70px;
+}
+
+#about .intro {
+	margin: 80px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#about .intro .heading {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#about .intro .heading h5 {
+	color: #FF0077;
+	margin: 0;
+	font-size: 1rem;
+	letter-spacing: .2rem;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+
+#about .intro .heading h1 {
+	margin: 0;
+	color: #313131;
+	font-size: 2.5rem;
+}
+
+#about .intro .info {
+	padding: 0 20px;
+	display: flex;
+	margin-top: 50px;
+	justify-content: center;
+	align-items: center;
+}
+
+#about .intro .info img {
+	border-radius: 50%;
+	height: 120px;
+}
+
+#about .intro .info p {
+	margin: 0 50px;
+	line-height: 2rem;
+	font-size: 1.2rem;
+}
+
+#about .content {
+	display: flex;
+	column-gap: 20px;
+}
+
+#about .content h3 {
+	font-size: 1.3rem;
+	letter-spacing: .2rem;
+	color: #313131;
+	text-transform: uppercase;
+	font-weight: 900;
+	/* margin-bottom: 500px; */
+}
+
+#about .content p {
+	font-size: 1.2rem;
+}
+
+#about .content ul {
+	margin-top: 50px;
+	padding: 0;
+	list-style: none;
+}
+
+#about .content .biodata ul li {
+	display: flex;
+	flex-direction: column;
+	row-gap: 5px;
+	color: #313131;
+	margin-bottom: 20px;
+}
+
+#about .content .biodata ul .name {
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: .1rem;
+	font-size: 1rem;
+}
+
+#about .content .skills ul {
+	padding-top: 30px;
+}
+
+#about .content .skills li {
+	height: .4rem;
+	background: #a1a1a1;
+	width: 100%;
+	margin-bottom: 70px;
+	padding: 0;
+	position: relative;
+}
+
+#about .content .skills strong {
+	position: absolute;
+	left: 0;
+	top: -2rem;
+	font-weight: 900;
+	color: #313131;
+}
+
+#about .content .skills .progress {
+	background: #313131;
+	position: relative;
+	height: 100%;
+}
+
+#about .content .skills span {
+	position: absolute;
+	right: 0;
+	top: -2.6rem;
+	display: block;
+	color: white;
+	font-size: .7rem;
+	line-height: 1;
+	background: #313131;
+	padding: 7px;
+	border-radius: 3px;
+}
+
+#about .content .skills ul :nth-child(1) .progress {
+	width: 95%;
+}
+
+#about .content .skills ul :nth-child(2) .progress {
+	width: 85%;
+}
+
+#about .content .skills ul :nth-child(3) .progress {
+	width: 70%;
+}
+
+#about .content .skills ul :nth-child(4) .progress {
+	width: 95%;
+}
+
+#about .content .skills ul :nth-child(5) .progress {
+	width: 75%;
+}
+
+#about .button {
+	display: flex;
+	margin: auto;
+	column-gap: 40px;
+}
+
+#about .button a {
+	transition: all .5s;
+	font-weight: 900;
+	border-radius: 3px;
+	font-size: .9rem;
+	text-transform: uppercase;
+	letter-spacing: .25rem;
+	text-decoration: none;
+}
+
+#about .button .contact-btn {
+	border: 3px solid #616161;
+	padding: 15px 80px;
+	color: #000;
+	font-weight: 900;
+}
+
+#about .button .contact-btn:hover {
+	color: #cc005f;
+	border-color: #cc005f;
+}
+
+#about .button .cv-btn {
+	padding: 15px 50px;
+	color: #fff;
+	border: 3px solid #313131;
+	background-color: #313131;
+}
+
+/* * End About */
+
+
+
+/* * Start Contact  */
+#contact {
+	margin: 0;
+	background: #151515;
+}
+
+#contact .wrapper {
+	width: 650px;
+	margin: auto;
+	padding-top: 120px;
+}
+
+#contact h5 {
+	color: #FF0077;
+	margin: 0;
+	font-size: 1rem;
+	letter-spacing: .2rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#contact h1 {
+	margin: 15px 0 0 0;
+	text-align: center;
+	font-size: 2.5rem;
+	color: #fff;
+}
+
+#contact p {
+	text-align: center;
+	color: #ffffffbd;
+	line-height: 30px;
+	font-size: 1.2rem;
+
+}
+
+#contact form {
+	display: flex;
+	flex-direction: column;
+}
+
+#contact form input,
+#contact form textarea {
+	color: #ffffffcb;
+	border: 0;
+	border-bottom: #ffffff49 solid 2px;
+	height: 70px;
+	outline: none;
+	background: transparent;
+	transition: all .5s;
+}
+
+#contact form textarea {
+	margin-top: 10px;
+	font-size: 1rem;
+}
+
+#contact form input:focus,
+#contact form textarea:focus {
+	border-bottom: #FF0077 solid 2px;
+
+}
+
+#contact form button {
+	color: white;
+	letter-spacing: 0.1rem;
+	font-weight: 900;
+	margin-top: 10px;
+	width: 100%;
+	padding: 15px;
+	text-transform: uppercase;
+	background-color: #FF0077;
+	cursor: pointer;
+}
+
+/* * End Contact */
+
+/* * Start footer */
+footer {
+	font-size: .9rem;
+	margin: 0;
+	background-color: #151515;
+	display: flex;
+	padding: 25px 0 10px;
+	justify-content: center;
+	align-items: center;
+	column-gap: 20px;
+}
+
+footer p {
+	margin: 0;
+	/* margin: auto; */
+}
+
+footer span {
+	color: #dbdbdb;
+}
+
+/* * End footer */
